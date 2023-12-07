@@ -1,0 +1,272 @@
+@import "global";
+
+.image-logo {
+  width: 119px;
+  height: 132px;
+  padding-bottom: 600px;
+  padding-right: 665px;
+}
+header {
+  top: 0;
+  width: 100%;
+  min-width: 132px;
+}
+.wrapper {
+  @include caja-flex(space-between, center, nowrap);
+  background-color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+nav {
+  @include caja-flex(space-between, center, nowrap);
+
+  width: 100%;
+  min-height: 780px;
+  flex-shrink: 0;
+  padding-left: 1px;
+  padding-right: 2px;
+  background-image: url("/test/img/cabecera.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  ul {
+    display: flex;
+    padding: 0;
+    padding-bottom: 600px;
+    padding-left: 10px;
+
+    a {
+      padding: 30px;
+      width: 115px;
+      max-height: 29px;
+      flex-shrink: 0;
+      font-weight: bold;
+    }
+    a:hover {
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      text-align: center;
+      transform: scale(1.1);
+    }
+  }
+}
+.contenedor-texto {
+  width: 95%;
+  min-height: 225px;
+  display: flex;
+  padding: 0;
+  text-align: left;
+  margin-left: 50px;
+
+  p {
+    color: #000;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 900px;
+    line-height: normal;
+
+    margin-left: 10px;
+  }
+  .container-caracola {
+    display: flex;
+    width: 22%;
+    min-height: 210px;
+    flex-shrink: 0;
+    margin: 100px;
+  }
+}
+
+.wrapper {
+  @include caja-flex(space-between, center, nowrap);
+  background-color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+// secciciones
+.seo-img {
+  display: flex;
+  width: 100%;
+  min-height: 567px;
+  flex-shrink: 0;
+}
+.titulo-stickers {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+section {
+  width: 100%;
+
+  .titulo-stickers {
+    width: 398px;
+    height: 76px;
+    border-radius: 12px;
+    background: #ff570d;
+    flex-shrink: 0;
+    margin-left: 450px;
+    h4 {
+      color: #fff;
+      text-align: center;
+      margin-top: 100px;
+      padding-top: 10px;
+
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      flex-shrink: 0;
+    }
+  }
+  .stickers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .stickers {
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .stickers img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .stickers p {
+    margin-top: 10px;
+  }
+}
+
+.wrapper {
+  @include caja-flex(space-between, center, nowrap);
+  background-color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.noticias-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h1 {
+  margin-left: 6.95rem;
+  margin-top: 30px;
+
+  font-size: 4.4rem;
+  font-weight: 100px;
+  line-height: 1.255;
+  color: #ff570d;
+  font-family: Mulish, "Source Sans Pro";
+
+  flex-shrink: 0;
+}
+.linea-vertical {
+  width: 65%;
+  height: 0.2rem;
+  background-color: #ff570d;
+  flex-shrink: 0;
+  margin-right: 50px;
+}
+/*inicio styles noticias API*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.noticia {
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.noticia img {
+  max-width: 100%;
+  height: auto;
+}
+
+.noticia p {
+  margin-top: 10px;
+}
+/*final styles noticias API*/
+
+footer {
+  width: 100%;
+
+  align-items: center;
+  margin: 6.6rem 0rem 2.9rem 0rem;
+  box-sizing: border-box;
+  padding: 1.9rem 4.1rem 3rem 6rem;
+  height: calc(100% - 9.5rem);
+  display: flex;
+
+  background-color: #ff570d;
+  flex-shrink: 0;
+
+  div {
+    display: flex;
+  }
+
+  .footer-links {
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.255;
+    color: #ffffff;
+    font-family: Mulish, "Source Sans Pro";
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .img-pie {
+    max-width: 100%;
+    height: auto;
+    padding-left: 50%;
+    margin: 2.1rem 28.4rem 0rem 0rem;
+
+    height: 14.7rem;
+
+    flex-shrink: 0;
+  }
+
+  .contacto {
+    color: #fff;
+    height: 100%;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    p {
+      margin: 0rem 1.1rem 0.5rem 0rem;
+      font-size: 2.4rem;
+      font-weight: 400px;
+      line-height: 1.255;
+      color: #ffffff;
+      font-family: Mulish, "Source Sans Pro";
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+@import "medios";

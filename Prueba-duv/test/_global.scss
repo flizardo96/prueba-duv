@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+//Globales
+
+html {
+  font-size: 62.5% box-sizing border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  line-height: 1.6;
+  font-family: Mulish, sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+}
+img {
+  width: 80%;
+  height: auto;
+}
+
+nav,
+.contenedor-texto,
+.seo-img,
+.stickers-container,
+.servicios-container,
+.noticias-container,
+.footer-content {
+  width: 100%;
+  margin: auto;
+}
+
+.titulo-stickers,
+.titulo-sevicios {
+  margin-bottom: 10%;
+}
+// Variables
+$font-p: 2.5rem;
+$font-h1: 3rem;
+$font-h2: 2.4rem;
+$font-h3: 2rem;
+p {
+  font-size: $font-p;
+}
+// mixins en Sass;
+
+@mixin caja-flex($principal, $cruzado, $wrap) {
+  display: flex;
+  justify-content: $principal;
+  align-items: $cruzado;
+  flex-wrap: $wrap;
+}
